@@ -73,4 +73,4 @@ print "finished simulation"
 t1 = time.time()
 print "time taken {ti} s".format(ti=str(int(t1-t0)))
 
-ft.trajectory_to_xyz()
+ft.trajectory_to_xyz(filename_out='simulation-diffa.xyz')
