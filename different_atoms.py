@@ -15,11 +15,11 @@ simu.create_atoms(element='Ag',positions=[[5, 5, 10]])
 simu.list_atoms()
 
 # stop here - remove 'quit()' to carry out the rest of the script
-quit()
+# quit()
 
 # create interactions
 simu.create_interaction(['Au','Au'], strength=1.0, equilibrium_distance=2.39)
-#simu.create_interaction(['Au','Ag'], strength=0.1, equilibrium_distance=4.0)
+simu.create_interaction(['Au','Ag'], strength=0.1, equilibrium_distance=4.0)
 
 # list the indices of gold and silver atoms
 au_indices = simu.get_indices_by_element('Au')
